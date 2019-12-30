@@ -42,7 +42,7 @@ def db_check():
     cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
     conn.commit()
 
-if __name__ == '__main__':
+'''if __name__ == '__main__':
     states, capitals = parse_allowed_input()
     args = parse_arguments(states, capitals)
     if args.state:
