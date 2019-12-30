@@ -14,7 +14,7 @@ CREATE TABLE "capitals"(
 "note_id" TEXT)''')
 
 #This function uses the csv file to populate the database with capital_id and state_id entries
-with open('mypackage/capitals.csv') as csv_file:
+with open('directory/capitals.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         print(row)
