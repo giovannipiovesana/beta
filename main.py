@@ -34,12 +34,15 @@ def parse_arguments(states, capitals):
     args = parser.parse_args()
     return args
 
+def db_check():
+conn = sqlite3.connect('capitals.sqlite')
+cur = conn.cursor()
+
 capital = args.capitale
 note = args.been
 
-def db_check():
-        conn = sqlite3.connect('capitals.sqlite')
-        cur = conn.cursor()
+cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
+conn.commit()
 
 if __name__ == '__main__':
     states, capitals = parse_allowed_input()
