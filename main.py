@@ -47,11 +47,11 @@ def db_edit():
     conn.commit()
 
 def db_check():
-    capital = args.check
+    capitale = args.check
     conn = sqlite3.connect('capitals.sqlite')
   
     cur = conn.cursor()
-    cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (capital,))
+    cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (capitale,))
     print (cur.fetchone())
     
 '''if __name__ == '__main__':
