@@ -1,0 +1,50 @@
+# Jailbreakers_capitals
+
+This project is composed by four week folders that allows the user to perform different tasks.
+
+## Week_2
+In *Week_2* the user can find a file named ```capitals.py``` that implements the ```check_capital``` and ```check_state``` functions. These functions check if the given input is a valid name of an european capital city, or state respectively. They are used in the ```main.py``` file to test if some cities and states are in Europe.
+
+## Week_3
+*Week_3* Adds the ```capitals.csv``` file that makes ```main.py``` module work. It returns to the user the name of the state given the capital or viceversa. 
+* An example of output can be: "The European state whose capital is 'Capital' is 'State'." 
+
+Exaple commands: 
+* $ python main.py -capital Berlin 
+
+* $ python main.py -state Italy
+
+* N.B: All the 'Capital' and 'State' commands must be written with the first letter in uppercase and the rest lowercase, otherwise the code returns the list of all possible options.
+
+## Valid Inputs
+
+All the valid inputs the user can choose can be found in _.csv_ file located in: ```Week_3/capitals.csv```.
+
+## Week_4
+*Week_4* is composed by three modules that performs the following tasks (before using the following commands it's mandatory to _cd_ to the folder *Week_4*!):
+
+* ```db_create.py```: this module populates a database with a table named capitals composed by three columns (_capital_id_, _state_id_, _note_id_). _capital_id_ and _state_id_ are taken from the _capital.csv_ file. _note_id_ is a empty row by default.
+* Command: $ python db_create.py
+
+* ```db_edit.py```: this module edit the content of _note_id_ entry. After inputting the name of the capital (written with the first letter in uppercase and the rest lowercase), the user can insert a word which will override the _note_id_ entry of the Capital.
+* Example command:  $ python db_edit.py Berlin Been
+
+* ```db_check.py```: this module checks the content of the row of the capital selected (written with the first letter in uppercase and the rest lowercase).
+* Example command: $ python db_check.py Berlin
+
+## Week_5
+*Week_5* Uses the module ```test_capitals.py``` to tests the module ```capital.py``` from *Week_2* with 3 different inputs.
+
+* Command: $ python -m unittest -v -b Week_5/test_capitals.py
+
+## Contributors
+
+* Mattioli Luca
+* Piovesana Giovanni Andrea
+* Donadio Davide
+* Zamperin Alberto
+
+## License
+
+MIT License
+
