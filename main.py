@@ -22,7 +22,7 @@ def parse_allowed_input(datafile=data):
 
 # This function parses the user inputs.
 def parse_arguments():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(states, capitals)
     parser.add_argument('-capital', type=str,
                         help='The name of the state', choices=states)
     parser.add_argument('-state', type=str,
