@@ -36,11 +36,11 @@ def parse_arguments(states, capitals):
 
 def state_capital():
         states, capitals = parse_allowed_input()
-    args = parse_arguments(states, capitals)
-    if args.state:
-        capital_checker = check_capital(args.state)
-    else: 
-        state_checker = check_state(args.capital)
+        args = parse_arguments(states, capitals)
+        if args.state:
+            capital_checker = check_capital(args.state)
+        else:
+            state_checker = check_state(args.capital)
 
 def db_check():
         conn = sqlite3.connect('capitals.sqlite')
