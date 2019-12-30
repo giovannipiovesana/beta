@@ -1,8 +1,8 @@
 # This module uses argparse to get an input from user in order to get the desired output running check_capital or check_state.
 import argparse
 import csv
-from Week_2.capitals import check_capital
-from Week_2.capitals import check_state
+from directory.capitals import check_capital
+from directory.capitals import check_state
 import sqlite3
 import sys
 
