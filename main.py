@@ -51,4 +51,4 @@ def db_check():
     if args.state:
         capital_checker = check_capital(args.state)
     else: 
-        state_checker = check_state(args.capital)
+        state_checker = check_state(args.capital)'''
