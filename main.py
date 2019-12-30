@@ -21,7 +21,7 @@ def parse_allowed_input(datafile=data):
     return states, capitals
 
 # This function parses the user inputs.
-def parse_arguments(states, capitals):
+def parse_arguments(capital, state, capitale, been):
     parser = argparse.ArgumentParser()
     parser.add_argument('-capital', type=str,
                         help='The name of the state', choices=states)
@@ -34,7 +34,7 @@ def parse_arguments(states, capitals):
     args = parser.parse_args()
     return args
 
-args = parse_arguments(states, capitals, capitale, been)
+args = parse_arguments(capital, state, capitale, been)
 
 def state_capital():
         states, capitals = parse_allowed_input()
