@@ -14,7 +14,7 @@ CREATE TABLE "capitals"(
 "note_id" TEXT)''')
 
 #This function uses the csv file to populate the database with capital_id and state_id entries
-with open('capitals.csv') as csv_file:
+with open('mypackage/capitals.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         print(row)
@@ -24,3 +24,5 @@ with open('capitals.csv') as csv_file:
         capital_id, state_id) VALUES (?,?)''',
                     (capital_id, state_id))
         conn.commit()
+        
+conn.close()
