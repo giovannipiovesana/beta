@@ -6,7 +6,7 @@ conn = sqlite3.connect('capitals.sqlite')
 cur = conn.cursor()
 
 #this function creates a table or rewrites it from scratch it it's already there
-cur.execute('DROP TABLE capitals')
+cur.execute('DROP TABLE IF EXISTS capitals')
 cur.execute('''
 CREATE TABLE "capitals"(
 "capital_id" TEXT,
