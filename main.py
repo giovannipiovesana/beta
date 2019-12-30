@@ -49,5 +49,5 @@ cur = conn.cursor()
 capital = args.capitale
 note = args.been
 
-cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capitale))
+cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
 conn.commit()
