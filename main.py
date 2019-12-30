@@ -34,7 +34,7 @@ def parse_arguments():
     args = parser.parse_args()
     return args
 
-args = parse_arguments(capital, state, capitale, been)
+args = parse_arguments()
 
 def state_capital():
         states, capitals = parse_allowed_input()
