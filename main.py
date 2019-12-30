@@ -42,12 +42,12 @@ if __name__ == '__main__':
         capital_checker = check_capital(args.state)
     else: 
         state_checker = check_state(args.capital)
-
-conn = sqlite3.connect('capitals.sqlite')
-cur = conn.cursor()
-
-capital = args.capitale
-note = args.been
-
-cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
-conn.commit()
+    elif:
+        conn = sqlite3.connect('capitals.sqlite')
+        cur = conn.cursor()
+        
+        capital = args.capitale
+        note = args.been
+        
+        cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
+        conn.commit()
