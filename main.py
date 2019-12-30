@@ -27,8 +27,6 @@ def parse_arguments(states, capitals):
                         help='The name of the state', choices=states)
     parser.add_argument('-state', type=str,
                         help='The name of the capital', choices=capitals)
-    parser.add_argument('-capitale', type=str,
-                        help='The name of the state')
     parser.add_argument('-been', type=bool,
                         help='The name of the capital')    
     args = parser.parse_args()
@@ -38,7 +36,7 @@ def db_check():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
     
-    capital = args.capitale
+    capital = args.capital
     note = args.been
 
     cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
