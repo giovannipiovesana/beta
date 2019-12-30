@@ -34,15 +34,7 @@ def parse_arguments(states, capitals):
     args = parser.parse_args()
     return args
 
-# This function runs the check_capital and check_state function with the user input.
-if __name__ == '__main__':
-    states, capitals = parse_allowed_input()
-    args = parse_arguments(states, capitals)
-    if args.state:
-        capital_checker = check_capital(args.state)
-    else: 
-        state_checker = check_state(args.capital)
-    else:
+def db_check():
         conn = sqlite3.connect('capitals.sqlite')
         cur = conn.cursor()
         
@@ -51,3 +43,12 @@ if __name__ == '__main__':
         
         cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
         conn.commit()
+
+# This function runs the check_capital and check_state function with the user input.
+'''if __name__ == '__main__':
+    states, capitals = parse_allowed_input()
+    args = parse_arguments(states, capitals)
+    if args.state:
+        capital_checker = check_capital(args.state)
+    else: 
+        state_checker = check_state(args.capital)
