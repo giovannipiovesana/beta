@@ -3,8 +3,10 @@ import argparse
 import csv
 from Week_2.capitals import check_capital
 from Week_2.capitals import check_state
+import sqlite3
+import sys
 
-data ='Week_3/capitals.csv'
+data ='directory/capitals.csv'
 
 # This function creates two sets from the csv file in order to whitelist user inputs
 def parse_allowed_input(datafile=data):
@@ -25,6 +27,10 @@ def parse_arguments(states, capitals):
                         help='The name of the state', choices=states)
     parser.add_argument('-state', type=str,
                         help='The name of the capital', choices=capitals)
+    parser.add_argument('-capitale', type=str,
+                        help='The name of the state')
+    parser.add_argument('-been', type=bool,
+                        help='The name of the capital')    
     args = parser.parse_args()
     return args
 
@@ -36,3 +42,12 @@ if __name__ == '__main__':
         capital_checker = check_capital(args.state)
     else: 
         state_checker = check_state(args.capital)
+
+conn = sqlite3.connect('capitals.sqlite')
+cur = conn.cursor()
+
+capital = args.capitale
+note = args.been
+
+cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capitale))
+conn.commit()
