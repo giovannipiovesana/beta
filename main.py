@@ -42,7 +42,7 @@ if __name__ == '__main__':
         capital_checker = check_capital(args.state)
     else: 
         state_checker = check_state(args.capital)
-    elif:
+    else:
         conn = sqlite3.connect('capitals.sqlite')
         cur = conn.cursor()
         
