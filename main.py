@@ -20,7 +20,7 @@ def db_check():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
 
-    cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (args.city,))
+    cur.execute('SELECT capital_id, note_id FROM capitals WHERE capital_id= ?', (args.city,))
     print (cur.fetchone())
     conn.close()
 
