@@ -12,7 +12,7 @@ def db_create():
     CREATE TABLE "capitals"(
     "capital_id" TEXT,
     "state_id" TEXT,
-    "note_id" CHAR (256))''')
+    "note_id" TEXT)''')
     
     with open('directory/capitals.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
