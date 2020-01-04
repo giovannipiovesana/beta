@@ -55,10 +55,8 @@ def db_check():
     print (cur.fetchone())
     
 if __name__ == '__main__':
-    db_edit()
-    db_check()
-#    states, capitals = parse_allowed_input()
-#    args = parse_arguments(states, capitals)
+    states, capitals = parse_allowed_input()
+    args = parse_arguments(states, capitals)
     if args.capital and args.been:
         db_edit(args.capital, args.been)
         
