@@ -6,7 +6,7 @@ import sys
 data ='directory/capitals.csv'
 
 # This function parses the user inputs.
-def parse_arguments(states, capitals):
+def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('-city', type=str,
                         help='The name of the capital')
