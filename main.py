@@ -26,7 +26,7 @@ def db_check():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--create', type=str,
+    parser.add_argument('--create', type=bool,
                         help='erase existing and populate new db')
     parser.add_argument('--capital', type=str,
                         help='The name of the state')
@@ -38,7 +38,7 @@ if __name__ == '__main__':
                         help='been')
     args = parser.parse_args()
     
-    if args.create:
+    if args.create = True:
         db_create()
     if args.state:
         capital_checker = check_capital(args.state)
