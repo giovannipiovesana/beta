@@ -21,13 +21,13 @@ def db_edit():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
     
-    capital = args.capital
+    capital = args.city
     note = args.been
 
     cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
     conn.commit()
     
 if __name__ == '__main__':
-    if args.capital:
+    if args.city:
         if args.been:
-            db_edit(args.capital, args.been)
+            db_edit(args.city, args.been)
