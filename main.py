@@ -39,6 +39,6 @@ if __name__ == '__main__':
         capital_checker = check_capital(args.state)
     if args.capital:
         state_checker = check_state(args.capital)
-    else:
+    if args.city:
         db_edit()
         db_check()
