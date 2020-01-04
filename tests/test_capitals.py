@@ -7,7 +7,7 @@ import sys
 
 class TestTrue(unittest.TestCase):
     def setUp(self):
-        self.list = ('Rome, Italy')
+        self.list = ('Rome; Italy')
         self.list_boundary = ('andorra', 'aland island')
         self.list_empty = ()
 
