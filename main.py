@@ -28,7 +28,6 @@ def db_create():
             capital_id, state_id) VALUES (?,?)''',
                         (capital_id, state_id))
             conn.commit()
-            conn.close()
 
 def db_edit():
     conn = sqlite3.connect('capitals.sqlite')
