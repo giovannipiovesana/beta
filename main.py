@@ -53,7 +53,7 @@ if __name__ == '__main__':
     args = parse_arguments(states, capitals)
     if args.state:
         capital_checker = check_capital(args.state)
-    if args.capital
+    if args.capital:
         state_checker = check_state(args.capital)
     else:
         db_edit()
