@@ -3,10 +3,6 @@ import argparse
 import sqlite3
 import sys
 
-data ='directory/capitals.csv'
-conn = sqlite3.connect('capitals.sqlite')
-cur = conn.cursor()
-
 # This function parses the user inputs.
 '''def parse_arguments():
     parser = argparse.ArgumentParser()
