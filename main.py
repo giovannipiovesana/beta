@@ -30,4 +30,4 @@ def db_edit():
 if __name__ == '__main__':
     if args.capital:
         if args.been:
-        db_edit(args.capital, args.been)
+            db_edit(args.capital, args.been)
