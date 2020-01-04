@@ -18,7 +18,7 @@ def db_create():
     with open('directory/capitals.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
-            print row
+            print (row)
             capital_id = row[0]
             state_id = row[1]
             cur.execute('''INSERT INTO capitals(
