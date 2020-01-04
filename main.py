@@ -23,7 +23,15 @@ def db_edit():
 
     cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (args.city, args.been))
     conn.commit()
-    
+
+def db_check():
+    conn = sqlite3.connect('capitals.sqlite')
+    cur = conn.cursor()
+
+    cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (capital,))
+    print (cur.fetchone())
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--city', type=str,
@@ -35,3 +43,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     db_edit()
+    
+    db_check()
