@@ -27,7 +27,7 @@ def db_check():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
 
-    cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (args.check,))
+    cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (args.city,))
     print (cur.fetchone())
     conn.close()
 
@@ -37,10 +37,7 @@ if __name__ == '__main__':
                         help='The name of the capital')
     parser.add_argument('--been', type=str,
                         help='been')
-    parser.add_argument('--check', type=str,
-                        help='The name of the capital')
     args = parser.parse_args()
     
     db_edit()
-    
-    #db_check()
+    db_check()
