@@ -40,5 +40,8 @@ if __name__ == '__main__':
     if args.capital:
         state_checker = check_state(args.capital)
     if args.city:
-        db_edit()
-        db_check()
+        if args.been:
+            db_edit()
+        else:
+            db_check()
+    else: print ('ERROR BRO)
