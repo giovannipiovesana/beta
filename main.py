@@ -20,11 +20,8 @@ data ='directory/capitals.csv'
 def db_edit():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
-    
-    capital = args.city
-    note = args.been
 
-    cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
+    cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (args.city, args.been))
     conn.commit()
     
 if __name__ == '__main__':
@@ -37,4 +34,4 @@ if __name__ == '__main__':
                         help='The name of the capital')
     args = parser.parse_args()
     
-    db_edit(capital, note)
+    db_edit()
