@@ -12,27 +12,27 @@ class TestTrue(unittest.TestCase):
         self.list_empty = ()
 
 
-#Test 1: test with an invalid type input.  
     def test_invalid (self):
         a = check_state(self.list)
         b = check_capital(self.list)
         self.assertFalse(a)
         self.assertFalse(b)
+
         
-#test 2: Test with an empty list.
     def test_empty(self):
         c = check_state(self.list_empty)
         d = check_capital(self.list_empty)
         self.assertFalse(c)
         self.assertFalse(d)
 
-#test 3: Test with a corner case since lowercase aren't allowed.
+        
     def test_cornercase(self):
         e = check_state(self.list_boundary)
         f = check_capital(self.list_boundary)
         self.assertFalse(e)
         self.assertFalse(f)
  
+
     def tearDown(self):
         del self.list
         del self.list_empty
