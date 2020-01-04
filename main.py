@@ -28,6 +28,4 @@ def db_edit():
     conn.commit()
     
 if __name__ == '__main__':
-    if args.city:
-        if args.been:
-            db_edit(args.city, args.been)
+    db_edit(args.city, args.been)
