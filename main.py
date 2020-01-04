@@ -40,9 +40,9 @@ def db_check():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--capital', type=str,
-                        help='The name of the state', choices=states)
+                        help='The name of the state')
     parser.add_argument('--state', type=str,
-                        help='The name of the capital', choices=capitals)
+                        help='The name of the capital')
     parser.add_argument('--city', type=str,
                         help='The name of the capital')
     parser.add_argument('--been', type=str,
