@@ -3,7 +3,6 @@ import argparse
 import sqlite3
 import sys
 
-import csv
 from directory.capitals import check_capital
 from directory.capitals import check_state
 from directory.db_manager import db_create
