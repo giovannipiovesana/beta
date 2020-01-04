@@ -19,7 +19,7 @@ def db_edit():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
 
-    cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (args.city, args.been))
+    cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (args.been, args.city))
     conn.commit()
     conn.close()
     
