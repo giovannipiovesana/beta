@@ -12,7 +12,7 @@ def db_edit():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
 
-    cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (args.been, args.city))
+    cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (args.note, args.city))
     conn.commit()
     conn.close()
     
@@ -34,8 +34,8 @@ if __name__ == '__main__':
                         help='The name of the state')
     parser.add_argument('--city', type=str,
                         help='The name of the capital')
-    parser.add_argument('--been', type=str,
-                        help='Have I been there')
+    parser.add_argument('--note', type=str,
+                        help='Add some travel notes')
     args = parser.parse_args()
     
     if args.create == True:
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     if args.capital:
         state_checker = check_state(args.capital)
     if args.city:
-        if args.been:
+        if args.note:
             db_edit()
             db_check()
         else:
