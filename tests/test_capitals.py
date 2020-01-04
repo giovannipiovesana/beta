@@ -1,7 +1,7 @@
 #This module runs three different tests to the capitals.py module in both check_capital and check_state
 import unittest
-from Week_2.capitals import check_capital
-from Week_2.capitals import check_state
+from directory.capitals import check_capital
+from directory.capitals import check_state
 import os
 import sys
 
