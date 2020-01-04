@@ -36,7 +36,7 @@ def parse_arguments(states, capitals):
     args = parser.parse_args()
     return args
 
-def db_edit():
+def db_edit(args.capital, args.been):
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
     
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     if args.capital and args.been:
         db_edit(args.capital, args.been)
         
-    #if args.state:
+    if args.state:
      #   capital_checker = check_capital(args.state)
    # else: 
     #    state_checker = check_state(args.capital)'''
