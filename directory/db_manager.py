@@ -12,7 +12,7 @@ def db_create():
     CREATE TABLE "capitals"(
     "capital_id" TEXT,
     "state_id" TEXT,
-    "note_id" TEXT)''')
+    "note_id" BOOLEAN)''')
     
     with open('directory/capitals.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
@@ -24,19 +24,3 @@ def db_create():
             capital_id, state_id) VALUES (?,?)''',
                         (capital_id, state_id))
             conn.commit()
-
-def db_edit():
-    conn = sqlite3.connect('capitals.sqlite')
-    cur = conn.cursor()
-
-    cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (args.been, args.city))
-    conn.commit()
-    conn.close()
-    
-def db_check():
-    conn = sqlite3.connect('capitals.sqlite')
-    cur = conn.cursor()
-
-    cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (args.city,))
-    print (cur.fetchone())
-    conn.close()
