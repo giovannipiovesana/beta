@@ -60,7 +60,7 @@ if __name__ == '__main__':
                         help='been')
     args = parser.parse_args()
     
-    if args.erase:
+    if args.create:
         db_create()
     if args.state:
         capital_checker = check_capital(args.state)
