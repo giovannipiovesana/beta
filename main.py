@@ -29,13 +29,13 @@ if __name__ == '__main__':
     parser.add_argument('--create', type=bool,
                         help='erase existing and populate new db')
     parser.add_argument('--capital', type=str,
-                        help='The name of the state')
-    parser.add_argument('--state', type=str,
                         help='The name of the capital')
+    parser.add_argument('--state', type=str,
+                        help='The name of the state')
     parser.add_argument('--city', type=str,
                         help='The name of the capital')
-    parser.add_argument('--been', type=str,
-                        help='been')
+    parser.add_argument('--been', type=bool,
+                        help='Have I been there')
     args = parser.parse_args()
     
     if args.create == True:
