@@ -34,7 +34,7 @@ if __name__ == '__main__':
                         help='The name of the state')
     parser.add_argument('--city', type=str,
                         help='The name of the capital')
-    parser.add_argument('--been', type=bool,
+    parser.add_argument('--been', type=str,
                         help='Have I been there')
     args = parser.parse_args()
     
