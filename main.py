@@ -54,10 +54,15 @@ def db_check():
     cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (capitale,))
     print (cur.fetchone())
     
-'''if __name__ == '__main__':
-    states, capitals = parse_allowed_input()
-    args = parse_arguments(states, capitals)
-    if args.state:
-        capital_checker = check_capital(args.state)
-    else: 
-        state_checker = check_state(args.capital)'''
+if __name__ == '__main__':
+    db_edit()
+    db_check()
+#    states, capitals = parse_allowed_input()
+#    args = parse_arguments(states, capitals)
+    if args.capital and args.been:
+        db_edit(args.capital, args.been)
+        
+    #if args.state:
+     #   capital_checker = check_capital(args.state)
+   # else: 
+    #    state_checker = check_state(args.capital)'''
