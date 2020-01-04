@@ -67,8 +67,7 @@ def check_capital(state_name):
         print 'The capital of {} is {}'.format(state_name,
                                                list_of_capitals[state_name])
     else:
-        print 'Sorry, {} does not seem to be an European state'
-    .format(state_name)
+        print 'Sorry, {} does not seem to be an European state'.format(state_name)
 
 
 def check_state(capital_name):
@@ -76,8 +75,6 @@ def check_state(capital_name):
 
     for (state, capital) in list_of_capitals.items():
         if capital == capital_name:
-            print 'The European state whose capital is {} is {}'
-    .format(capital_name, state)
+            print 'The European state whose capital is {} is {}'.format(capital_name, state)
     return
-    print 'Sorry, {} is not the capital of any European state'
-    .format(capital_name)
+    print 'Sorry, {} is not the capital of any European state'.format(capital_name)
