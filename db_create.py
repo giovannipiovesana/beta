@@ -21,5 +21,5 @@ def db_create():
             cur.execute('''INSERT INTO capitals(
             capital_id, state_id) VALUES (?,?)''',
                         (capital_id, state_id))
-     conn.commit()
-     conn.close()
+            conn.commit()
+            conn.close()
