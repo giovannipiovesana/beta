@@ -24,7 +24,7 @@ def db_check():
 
     cur.execute('SELECT capital_id, note_id FROM capitals WHERE capital_id= ?',
                 (args.city, ))
-    print cur.fetchone()
+    print (cur.fetchone())
     conn.close()
 
 
