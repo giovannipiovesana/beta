@@ -16,8 +16,8 @@ class TestTrue(unittest.TestCase):
     def test_invalid (self):
         a = check_state(self.valid_state)
         b = check_capital(self.valid_capital)
-        self.assertFalse(a)
-        self.assertFalse(b)
+        self.assertTrue(a)
+        self.assertTrue(b)
         
 #test 2: Test with an empty list.
     def test_empty(self):
