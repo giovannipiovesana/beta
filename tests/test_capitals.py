@@ -8,7 +8,6 @@ import sys
 class TestTrue(unittest.TestCase):
     def setUp(self):
         self.list = str('Andorra')
-        self.valid_state = 'Italy'
         self.list_boundary = ('andorra', 'aland island')
         self.list_empty = ()
 
