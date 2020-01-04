@@ -47,5 +47,6 @@ if __name__ == '__main__':
     if args.city:
         if args.been:
             db_edit()
+            db_check()
         else:
             db_check()
