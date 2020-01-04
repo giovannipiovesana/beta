@@ -47,7 +47,7 @@ def db_check():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--create', type=str, action='store_true',
+    parser.add_argument('--create', type=str, action='store_false',
                         help='erase existing and populate new db')
     parser.add_argument('--capital', type=str,
                         help='The name of the state')
