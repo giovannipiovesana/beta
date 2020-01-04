@@ -7,10 +7,7 @@ import csv
 from directory.capitals import check_capital
 from directory.capitals import check_state
 from directory.db_manager import db_create
-from directory.db_manager import db_edit
-from directory.db_manager import db_check
 
-'''
 def db_edit():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
@@ -25,7 +22,7 @@ def db_check():
 
     cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (args.city,))
     print (cur.fetchone())
-    conn.close()'''
+    conn.close()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
