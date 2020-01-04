@@ -37,11 +37,4 @@ if __name__ == '__main__':
                         help='The name of the capital')
     args = parser.parse_args()
     
-    conn = sqlite3.connect('capitals.sqlite')
-    cur = conn.cursor()
-    
-    capital = args.city
-    note = args.been
-
-    cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (note, capital))
-    conn.commit()
+    db_edit(capital, note)
