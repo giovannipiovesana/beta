@@ -43,4 +43,4 @@ if __name__ == '__main__':
     
     db_edit()
     
-    db_check()
+    #db_check()
