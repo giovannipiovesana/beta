@@ -1,7 +1,7 @@
 #This module populates a database named capitals
 import sqlite3
 import csv 
-def db_create():
+#def db_create():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
     
