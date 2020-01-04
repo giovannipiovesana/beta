@@ -7,17 +7,18 @@ import sys
 
 class TestTrue(unittest.TestCase):
     def setUp(self):
-        self.capital = 'Italy'
-        self.state = 'Rome'
+        self.list = str('Andorra')
+        self.valid_state = 'Italy'
         self.list_boundary = ('andorra', 'aland island')
         self.list_empty = ()
 
-#Test 1: test with an invalid type input.   
+
+#Test 1: test with an invalid type input.  
     def test_invalid (self):
-        a = check_state(self.state)
-        b = check_capital(self.capital)
-        self.assertTrue(a)
-        self.assertTrue(b)
+        a = check_state(self.list)
+        b = check_capital(self.list)
+        self.assertFalse(a)
+        self.assertFalse(b)
         
 #test 2: Test with an empty list.
     def test_empty(self):
