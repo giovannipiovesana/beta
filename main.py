@@ -20,16 +20,16 @@ cur = conn.cursor()
     return args'''
 
 def db_edit():
-#    conn = sqlite3.connect('capitals.sqlite')
-#    cur = conn.cursor()
+    conn = sqlite3.connect('capitals.sqlite')
+    cur = conn.cursor()
 
     cur.execute('UPDATE capitals SET note_id= ? WHERE capital_id= ?', (args.city, args.been))
     conn.commit()
     conn.close()
     
 def db_check():
-#    conn = sqlite3.connect('capitals.sqlite')
-#    cur = conn.cursor()
+    conn = sqlite3.connect('capitals.sqlite')
+    cur = conn.cursor()
 
     cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (args.check,))
     print (cur.fetchone())
