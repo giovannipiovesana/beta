@@ -4,6 +4,8 @@ import sqlite3
 import sys
 
 data ='directory/capitals.csv'
+conn = sqlite3.connect('capitals.sqlite')
+cur = conn.cursor()
 
 # This function parses the user inputs.
 '''def parse_arguments():
@@ -26,8 +28,8 @@ def db_edit():
     conn.close()
     
 def db_check():
-    conn = sqlite3.connect('capitals.sqlite')
-    cur = conn.cursor()
+#    conn = sqlite3.connect('capitals.sqlite')
+#    cur = conn.cursor()
 
     cur.execute('SELECT * FROM capitals WHERE capital_id= ?', (args.check,))
     print (cur.fetchone())
