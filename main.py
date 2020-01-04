@@ -8,9 +8,9 @@ data ='directory/capitals.csv'
 # This function parses the user inputs.
 def parse_arguments():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-city', type=str,
+    parser.add_argument('city', type=str,
                         help='The name of the capital')
-    parser.add_argument('-been', type=str,
+    parser.add_argument('been', type=str,
                         help='been')
     parser.add_argument('-check', type=str,
                         help='The name of the capital')
