@@ -61,7 +61,7 @@ list_of_capitals = {
 
 
 def check_capital(state_name):
-    '''given the State it gets the capital'''
+    '''It returns the capital of the correspondent state if it is present in the list.'''
 
     if state_name in list_of_capitals:
         print ('The capital of {} is {}'.format(state_name,
@@ -72,7 +72,7 @@ def check_capital(state_name):
 
 
 def check_state(capital_name):
-    '''given the capital it gets the state'''
+    '''It returns the state of the correspondent capital if it is present in the list.'''
 
     for (state, capital) in list_of_capitals.items():
         if capital == capital_name:
