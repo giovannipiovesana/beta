@@ -1,4 +1,6 @@
-# This module uses argparse to get an input from user in order to get the desired output running check_capital or check_state.
+'''This module imports modules from directory folder in order to get the
+check_capital function, the check_state function and the db_create function.
+'''
 import argparse
 import sqlite3
 import sys
