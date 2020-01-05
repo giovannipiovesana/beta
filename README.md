@@ -1,11 +1,14 @@
 # Jailbreakers_capitals
 
-This project is composed by four week folders that allows the user to perform different tasks.
+## My Europe's travel diary
 
-## Week_2
-In *Week_2* the user can find a file named ```capitals.py``` that implements the ```check_capital``` and ```check_state``` functions. These functions check if the given input is a valid name of an european capital city, or state respectively. They are used in the ```main.py``` file to test if some cities and states are in Europe.
+This project is diary a that a traveler can use to note their journey in the european capitals.
 
-## Week_3
+## Europe's Capitals and States recap
+Europe has a lot of states, many of which is difficult to remember exactly the capital. This is why the ```main.py``` has a command that help the user remember the capital given the state or viceversa.
+
+## Capital notebook functionality
+The program contains also a database which 
 *Week_3* Adds the ```capitals.csv``` file that makes ```main.py``` module work. It returns to the user the name of the state given the capital or viceversa. 
 * An example of output can be: "The European state whose capital is 'Capital' is 'State'." 
 
