@@ -7,7 +7,7 @@ import csv
 
 '''This function creates a table named capitals or rewrites it from
 scratch if it is already there with three entries: capital_id, state_id
-and notes_id.'''
+and note_id.'''
 
 
 def db_create():
