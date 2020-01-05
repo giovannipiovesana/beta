@@ -9,6 +9,8 @@ from directory.capitals import check_capital
 from directory.capitals import check_state
 from directory.db_manager import db_create
 
+''' This function edit the content of note of a the chosen capital.'''
+
 
 def db_edit():
     conn = sqlite3.connect('capitals.sqlite')
@@ -18,6 +20,9 @@ def db_edit():
                 (args.note, args.city))
     conn.commit()
     conn.close()
+
+''' This function shows the note of a given capital.
+It is useful to check if the note entry got updated or not.'''
 
 
 def db_check():
