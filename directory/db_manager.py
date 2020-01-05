@@ -5,10 +5,11 @@ import sqlite3
 import sys
 import csv
 
-'''This function creates a table named capitals or rewrites it from 
+'''This function creates a table named capitals or rewrites it from
 scratch if it is already there with three entries: capital_id, state_id
-and notes_id.
-'''
+and notes_id.'''
+
+
 def db_create():
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
@@ -20,9 +21,9 @@ def db_create():
     "state_id" TEXT,
     "note_id" TEXT)''')
 
-'''This iteration cycle populates the database with capital_id and 
-state_id entries from the capital.csv file.
-'''
+    '''This iteration cycle populates the database with capital_id and
+    state_id entries from the capital.csv file.
+    '''
     with open('directory/capitals.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
