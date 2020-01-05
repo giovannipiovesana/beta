@@ -1,4 +1,5 @@
-#This module runs three different tests to the capitals.py module in both check_capital and check_state
+'''This module runs three different tests to the capitals.py module in both
+check_capital and check_state.'''
 import unittest
 from directory.capitals import check_capital
 from directory.capitals import check_state
@@ -13,7 +14,7 @@ class TestTrue(unittest.TestCase):
         self.list_boundary = ('andorra', 'aland island')
         self.list_empty = ()
 
-# Test 1: test with an invalid type input.
+    ''' Test 1: test with an invalid type input.'''
 
     def test_invalid(self):
         a = check_state(self.list)
@@ -21,7 +22,7 @@ class TestTrue(unittest.TestCase):
         self.assertFalse(a)
         self.assertFalse(b)
 
-# test 2: Test with an empty list.
+    ''' Test 2: Test with an empty list.'''
 
     def test_empty(self):
         c = check_state(self.list_empty)
@@ -29,7 +30,7 @@ class TestTrue(unittest.TestCase):
         self.assertFalse(c)
         self.assertFalse(d)
 
-# test 3: Test with a corner case since lowercase aren't allowed.
+    ''' Test 3: Test with a corner case since lowercase aren't allowed.'''
 
     def test_cornercase(self):
         e = check_state(self.list_boundary)
