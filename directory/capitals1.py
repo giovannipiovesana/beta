@@ -1,5 +1,5 @@
 import csv
-file = 'capitals.csv'
+filename = 'capitals.csv'
 
 def load_csv(filename):
     '''Read the csv file and return the state/capital dictionary.'''
