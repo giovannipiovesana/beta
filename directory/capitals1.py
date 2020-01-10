@@ -6,15 +6,14 @@ def load_csv():
     returns a dictionary. intended for loading csv files'''
 
     list_of_capitals = {}
-    with open('directory/capitals.csv') as csv_file:
+    with open('directory/capitals.csv', 'r') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
-        try:
-            for row in reader:
+        for row in reader:
                 list_of_capitals[row[0]] = row[1]
         except IndexError:
             pass
         
-   #     return list_of_capitals
+        return list_of_capitals
 
 if __name__ == '__main__':
     print (list_of_capitals)
