@@ -5,8 +5,8 @@ list_of_capitals = {}
 with open(file, 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=';')
     for row in reader:
-        key, value = row
-        list_of_capitals[key] = value
+        k, v = row
+        list_of_capitals[k] = v
 
 print (list_of_capitals)
 
