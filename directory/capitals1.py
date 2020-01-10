@@ -9,7 +9,6 @@ def load_csv(filename):
         reader = csv.reader(csvfile, delimiter=';')
         for row in reader:
             list_of_capitals[row[0]] = row[1]
-            
     return list_of_capitals
 
 def check_capital(state_name):
