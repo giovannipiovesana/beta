@@ -2,11 +2,15 @@ import csv
 file = 'capitals.csv'
 
 list_of_capitals = {}
-with open(file, 'r') as csvfile:
+with open(file) as csvfile:
     reader = csv.reader(csvfile, delimiter=';')
-    for row in reader:
-        k, v = row
-        list_of_capitals[k] = v
+    try:
+        for row in reader:
+            list_of_capitals[row[0]] = row[1]
+    except IndexError:
+        pass
+
+return list_of_capitals
 
 print (list_of_capitals)
 
