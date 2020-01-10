@@ -1,5 +1,5 @@
 import csv
-file = 'directory/capitals.csv'
+file = 'capitals.csv'
 
 list_of_capitals = {}
 with open(file) as csvfile:
