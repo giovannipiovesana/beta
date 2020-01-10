@@ -13,5 +13,3 @@ def load_csv():
             pass
 
     return list_of_capitals
-
-print (list_of_capitals)
