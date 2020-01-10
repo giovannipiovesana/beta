@@ -14,7 +14,7 @@ def load_csv():
         except IndexError:
             pass
 
-    return list_of_capitals
+return list_of_capitals
 
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
