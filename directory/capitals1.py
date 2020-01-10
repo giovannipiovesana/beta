@@ -8,6 +8,8 @@ def list_of_capitals(filename):
         list_of_capitals = dict(reader)
     return list_of_capitals
 
+list_of_capitals = load_csv(filename)
+
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
        is present in the list.'''
