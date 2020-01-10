@@ -1,13 +1,13 @@
 import csv
+file = 'directory/capitals.csv'
 
-
-def load_csv('directory/capitals.csv'):
+def load_csv(file):
 
     '''loads file passed as filename (path of the file) and
     returns a dictionary. intended for loading csv files'''
 
     list_of_capitals = {}
-    with open('directory/capitals.csv') as csvfile:
+    with open(file) as csvfile:
         reader = csv.reader(csvfile, delimiter=';')
         try:
             for row in reader:
