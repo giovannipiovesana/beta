@@ -8,8 +8,6 @@ with open('directory/capitals.csv') as csvfile:
         for row in reader:
             list_of_capitals[row[0]] = row[1]
 
-print (list_of_capitals)
-
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
        is present in the list.'''
