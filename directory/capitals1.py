@@ -10,9 +10,6 @@ def load_csv():
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in reader:
                 list_of_capitals[row[0]] = row[1]
-        except IndexError:
-            pass
-        
         return list_of_capitals
 
 if __name__ == '__main__':
