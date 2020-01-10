@@ -1,12 +1,12 @@
 import csv
 filename = 'capitals.csv'
 
-with open(filename) as csv_file:
-    reader = csv.reader(csv_file)
-    next(reader)
-    list_of_capitals = dict(reader)
-
-return list_of_capitals
+def load_csv(filename):
+    with open(filename) as csv_file:
+        reader = csv.reader(csv_file)
+        next(reader)
+        list_of_capitals = dict(reader)
+    return list_of_capitals
 
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
