@@ -14,7 +14,7 @@ def load_csv():
         except IndexError:
             pass
         
-        return list_of_capitals
+   #     return list_of_capitals
 
 if __name__ == '__main__':
     print (list_of_capitals)
