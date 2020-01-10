@@ -34,8 +34,7 @@ def db_check():
     print (cur.fetchone())
     conn.close()
 
-
-if __name__ == '__main__':
+def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('-create', type=bool,
                         help='erase existing and populate new db')
@@ -48,7 +47,12 @@ if __name__ == '__main__':
     parser.add_argument('-note', type=str, help='Add some travel notes'
                         )
     args = parser.parse_args()
+    return args
 
+args = parse_arguments()
+
+if __name__ == '__main__':
+    args = parse_arguments()
     if args.create:
         db_create()
     if args.state:
