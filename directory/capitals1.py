@@ -34,5 +34,5 @@ def check_state(capital_name):
 
 if __name__ == '__main__':
     list_of_capitals = load_csv(filename)
-    def check_capital(state_name)
-    def check_state(capital_name)
+   # def check_capital(state_name)
+ #   def check_state(capital_name)
