@@ -3,9 +3,11 @@ file = 'capitals.csv'
 
 list_of_capitals = {}
 with open(file) as csvfile:
-    reader = csv.reader(csvfile, delimiter=';')
+    reader = csv.reader(csvfile, delimiter=';', 'r')
     for row in reader:
-        list_of_capitals[row[0]] = row[1]
+        key, value = row
+        list_of_capitals[key] = value
+
 print (list_of_capitals)
 
 def check_capital(state_name):
