@@ -1,12 +1,11 @@
 import csv
 
-def load_csv():
-    csv_path = 'directory/capitals.csv'
-    reader = csv.reader(open(csv_path, 'r'))
-    d = {}
-    for row in reader:
-        k, v = row
-        d[k] = v
+csv_path = 'directory/capitals.csv'
+reader = csv.reader(open(csv_path, 'r'))
+d = {}
+for row in reader:
+    k, v = row
+    d[k] = v
     
     
 if __name__ == '__main__':
