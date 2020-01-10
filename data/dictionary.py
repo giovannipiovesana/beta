@@ -1,5 +1,5 @@
 import csv
-filename = 'capitals.csv'
+filename = 'data/capitals.csv'
 
 reader = csv.reader(open(filename, 'r'))
 list_of_capitals = {}
