@@ -8,6 +8,7 @@ def load_csv(filename):
         list_of_capitals = dict(reader)
     return list_of_capitals
 
+if __name__ == '__main__':
 list_of_capitals = load_csv(filename)
 
 def check_capital(state_name):
