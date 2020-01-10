@@ -24,7 +24,7 @@ def db_create():
     '''This iteration cycle populates the database with capital_id and
     state_id entries from the capital.csv file.
     '''
-    with open('directory/capitals.csv') as csv_file:
+    with open('data/capitals.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             print (row)
