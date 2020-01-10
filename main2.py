@@ -44,8 +44,8 @@ def parse_arguments():
                         help='The name of the state')
     parser.add_argument('-city', type=str,
                         help='The name of the capital')
-    parser.add_argument('-note', type=str, help='Add some travel notes'
-                        )
+    parser.add_argument('-note', type=str, 
+                        help='Add some travel notes')
     args = parser.parse_args()
     return args
 
