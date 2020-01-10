@@ -1,7 +1,7 @@
 import csv
 filename = 'capitals.csv'
 
-def load_csv(filename):
+def list_of_capitals(filename):
     with open(filename) as csv_file:
         reader = csv.reader(csv_file)
         next(reader)
