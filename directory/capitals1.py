@@ -6,6 +6,7 @@ with open(filename) as csv_file:
     next(reader)
     list_of_capitals = dict(reader)
 
+print(list_of_capitals)
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
        is present in the list.'''
