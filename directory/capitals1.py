@@ -1,5 +1,5 @@
 import csv
-filename = 'directory/capitals.csv'
+filename = 'capitals.csv'
 
 with open(filename) as csv_file:
     reader = csv.reader(csv_file)
