@@ -8,9 +8,6 @@ def load_csv(filename):
         list_of_capitals = dict(reader)
     return list_of_capitals
 
-if __name__ == '__main__':
-list_of_capitals = load_csv(filename)
-
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
        is present in the list.'''
@@ -34,3 +31,8 @@ def check_state(capital_name):
             return
     print ('Sorry, {} is not the capital of any European state'
            .format(capital_name))
+
+if __name__ == '__main__':
+    list_of_capitals = load_csv(filename)
+    def check_capital(state_name)
+    def check_state(capital_name)
