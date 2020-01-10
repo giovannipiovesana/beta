@@ -16,7 +16,7 @@ def load_csv():
         
         return list_of_capitals
 
- if __name__ == '__main__':
+if __name__ == '__main__':
     print (list_of_capitals)
 
 def check_capital(state_name):
