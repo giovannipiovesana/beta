@@ -1,16 +1,14 @@
 import csv
 file = 'capitals.csv'
 
-list_of_capitals = {}
-with open(file) as csvfile:
-    reader = csv.reader(csvfile, delimiter=';')
-    try:
+def load_csv(filename):
+    '''Read the csv file and return the state/capital dictionary.'''
+    list_of_capitals = {}
+    with open(filename) as csvfile:
+        reader = csv.reader(csvfile, delimiter=';')
         for row in reader:
             list_of_capitals[row[0]] = row[1]
-    except IndexError:
-        pass
-
-print (list_of_capitals)
+    return list_of_capitals
 
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
