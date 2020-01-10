@@ -1,3 +1,5 @@
+import csv
+
 def load_csv():
 
     '''loads file passed as filename (path of the file) and
