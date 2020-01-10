@@ -1,5 +1,5 @@
 import csv
-filename = 'capitals.csv'
+filename = 'directory/capitals.csv'
 
 def load_csv(filename):
     with open(filename) as csv_file:
