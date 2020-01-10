@@ -9,9 +9,10 @@ def load_csv():
     with open('directory/capitals.csv', 'r') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in reader:
-                list_of_capitals[row[0]] = row[1]
+                list_of_capitals[row[0]] = row[1:]
         return list_of_capitals
 
+print(data)
 if __name__ == '__main__':
     print (list_of_capitals)
 
