@@ -1,6 +1,6 @@
 import csv
 
-csv_path = 'directory/capitals.csv'
+csv_path = 'capitals.csv'
 reader = csv.reader(open(csv_path, 'r'))
 d = {}
 for row in reader:
