@@ -10,8 +10,6 @@ with open(file) as csvfile:
     except IndexError:
         pass
 
-return list_of_capitals
-
 print (list_of_capitals)
 
 def check_capital(state_name):
