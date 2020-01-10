@@ -7,10 +7,10 @@ with open('directory/capitals.csv') as csvfile:
     try:
         for row in reader:
             list_of_capitals[row[0]] = row[1]
-        except IndexError:
-            pass
+    except IndexError:
+        pass
 
-    return list_of_capitals
+return list_of_capitals
 
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
