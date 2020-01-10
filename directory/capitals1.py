@@ -1,19 +1,16 @@
 import csv
 
 def load_csv():
-
-    '''loads file passed as filename (path of the file) and
-    returns a dictionary. intended for loading csv files'''
-
-    list_of_capitals = {}
-    with open('directory/capitals.csv', 'r') as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=',')
-        for row in reader:
-                list_of_capitals[row[0]] = row[1:]
-        return list_of_capitals
-
+    csv_path = 'directory/capitals.csv'
+    reader = csv.reader(open(csv_path, 'r'))
+    d = {}
+    for row in reader:
+        k, v = row
+        d[k] = v
+    
+    
 if __name__ == '__main__':
-    print (list_of_capitals)
+    print (d)
 
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
