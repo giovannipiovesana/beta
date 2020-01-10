@@ -1,4 +1,4 @@
-from directory.capitals_dict import list_of_capitals
+from data.capitals_dict import list_of_capitals
 
 def check_capital(state_name):
     '''It returns the capital of the correspondent state if it
