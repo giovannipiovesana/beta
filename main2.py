@@ -5,8 +5,8 @@ import argparse
 import sqlite3
 import sys
 
-from directory.capitals1 import check_capital
-from directory.capitals1 import check_state
+from directory.capitals import check_capital
+from directory.capitals import check_state
 from directory.db_manager import db_create
 
 ''' This function edit the content of note of a the chosen capital.'''
