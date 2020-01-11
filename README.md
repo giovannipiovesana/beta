@@ -8,11 +8,11 @@ This project is diary a that a traveler can use to note their journey in the eur
 The european continent has a lot of states, many of which is difficult to remember exactly the capital. This is why the ```main.py``` module comes in handy. It has a command which helps the user remember the capital of a given the state or viceversa. Two argparse command -state and -capital give back the user 
 
 Exaple commands: 
-*INPUT: $ python main.py -state Berlin 
-*OUTPUT: 'The European state whose capital is Berlin is Germany'
+* INPUT: $ python main.py -state Berlin 
+* OUTPUT: 'The European state whose capital is Berlin is Germany'
 
-*INPUT: $ python main.py -capital Italy
-*OUTPUT: 'The capital of Italy is Rome'
+* INPUT: $ python main.py -capital Italy
+* OUTPUT: 'The capital of Italy is Rome'
 
 * N.B: All the 'Capital' and 'State' commands must be written with the first letter in uppercase and the rest lowercase, otherwise the code returns an error like this:
 *-Sorry, germany does not seem to be an European state.
