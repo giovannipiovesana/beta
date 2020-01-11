@@ -37,15 +37,15 @@ def db_check():
 def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('-create', type=bool,
-                        help='erase existing and populate new db')
+                        help='Erase existing database and populate new database')
     parser.add_argument('-capital', type=str,
-                        help='The name of the capital')
+                        help='Returns state given the CAPITAL')
     parser.add_argument('-state', type=str,
-                        help='The name of the state')
+                        help='Returns capital given the STATE')
     parser.add_argument('-city', type=str,
-                        help='The name of the capital')
+                        help='The name of the CAPITAL in the database')
     parser.add_argument('-note', type=str, 
-                        help='Add some travel notes')
+                        help='Add some travel NOTES in the database')
     args = parser.parse_args()
     return args
 
