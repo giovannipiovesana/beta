@@ -55,9 +55,9 @@ if __name__ == '__main__':
     args = parse_arguments()
     if args.create:
         db_create()
-    if args.state:
-        capital_checker = check_capital(args.capital)
     if args.capital:
+        capital_checker = check_capital(args.capital)
+    if args.state:
         state_checker = check_state(args.state)
     if args.city:
         if args.note:
