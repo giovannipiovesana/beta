@@ -10,9 +10,9 @@ The european continent has a lot of states, many of which is difficult to rememb
 Two argparse command are used: *-state* followed by the state the user wants to know the capital and *-capital* followed by the capital the user wants to know the state.
 
 Exaple commands: 
-* INPUT: '''
+* INPUT:```
 $ python main.py -state Berlin 
-'''
+```
 * OUTPUT: The European state whose capital is Berlin is Germany
 
 * INPUT: $ python main.py -capital Italy
