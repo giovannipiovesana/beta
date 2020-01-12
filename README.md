@@ -5,16 +5,16 @@
 This project is a diary that travelers can use to note their journey in the european capitals.
 
 ## Europe's Capitals and States feature
-The european continent has a lot of states, many of which is difficult to remember exactly the capital. This is why the ```main.py``` module comes in handy. It has a command which helps the user remember the capital given the state or viceversa. 
+The european continent has a lot of states, many of which is difficult to remember exactly the capital. This is when the ```main.py``` module comes in handy. It has a command which helps the user remember the capital given the state or viceversa. 
 
 Two argparse command are used: *-state* followed by the state the user wants to know the capital and *-capital* followed by the capital the user wants to know the state.
 
 Exaple commands: 
-* INPUT:
+INPUT:
 ```
 $ python main.py -state Berlin 
 ```
-* OUTPUT: 
+OUTPUT: 
 ```
 The European state whose capital is Berlin is Germany
 ```
