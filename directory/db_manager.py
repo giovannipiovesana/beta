@@ -1,4 +1,6 @@
-'''This module populates a database named capitals.sqlite.
+'''This module populates a database named capitals.sqlite with capitals.csv
+through an iteration cycle. capital_id and state_id entries are filled with
+the capitals and states found on the .csv.
 '''
 import argparse
 import sqlite3
@@ -7,7 +9,7 @@ import csv
 
 
 def db_create():
-    '''This function creates a table named capitals or rewrites it from
+    '''This function creates a new table named capitals or rewrites it from
     scratch if it is already there with three entries: capital_id, state_id
     and note_id.'''
     conn = sqlite3.connect('capitals.sqlite')
@@ -20,11 +22,7 @@ def db_create():
     "state_id" TEXT,
     "note_id" TEXT)''')
 
-
     with open('data/capitals.csv') as csv_file:
-            '''This iteration cycle populates the database with capital_id and
-            state_id entries from the capital.csv file.
-            '''
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             print (row)
