@@ -7,7 +7,7 @@ This project is a diary that travelers can use to note their journey in the euro
 ## Europe's Capitals and States feature
 The european continent has a lot of states, many of which is difficult to remember exactly the capital. This is when the ```main.py``` module comes in handy. It has a command which helps the user remember the capital given the state or viceversa. 
 
-Two argparse command are used: *-state* followed by the state the user wants to know the capital and *-capital* followed by the capital the user wants to know the state. Exaple commands: 
+Two argparse command are used: *-state* followed by the state the user wants to know the capital and *-capital* followed by the capital the user wants to know the state. Example commands: 
 <br> 
 INPUT:
 ```
@@ -38,9 +38,7 @@ OUTPUT:
 Sorry, berlin is not the capital of any European state.
 ```
 
-If a state or capital is composed by two separated words like Vatican City, the command must be written inside apostrophes, otherwise the name is not recognized.
-
-Example of a right command:
+If a state or capital is composed by two separated words like Vatican City, the command must be written inside apostrophes, otherwise the name is not recognized. Example of a right command:
 <br>
 INPUT: 
 ```
@@ -87,7 +85,7 @@ OUTPUT:
 ('Berlin', 'Berlin has a nice weather')
 ```
 
-After inputting the name of the capital (same rules shown in _Capitals and States input rules_ apply), the user can insert a string which will override the _note_id_ entry of that capital everytime. The string after the command -note must be written inside apostrophes, otherwise the entry is not registered.
+After inputting the name of the capital (same rules shown in **Capitals and States input rules** apply), the user can insert a string which will override the _note_id_ entry of that capital everytime. The string after the command -note must be written inside apostrophes, otherwise the entry is not registered.
 
 ## Capital notebook checking
 The user can easly check the note of a capital written before with the following example command:
@@ -101,7 +99,7 @@ OUTPUT:
 ('Berlin', 'Berlin has a nice weather')
 ```
 
-Same rules shown in _Capitals and States input rules_ apply.
+Same rules shown in **Capitals and States input rules** apply.
 
 ## Valid States/Capitals
 
