@@ -1,5 +1,5 @@
 '''This module runs three different tests to the capitals.py module in both
-check_capital and check_state.'''
+check_capital and check_state functions.'''
 import unittest
 from directory.capitals import check_capital
 from directory.capitals import check_state
