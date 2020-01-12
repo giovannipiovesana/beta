@@ -33,19 +33,27 @@ def db_check():
                 (args.city, ))
     print (cur.fetchone())
     conn.close()
-
+    
+''' Parse user inputs:
+        -create: Erase existing database and populate new database if True.
+        -capital: Return capital given the STATE.
+        -state: Return state given the CAPITAL.
+        -city: Select the CAPITAL in the database.
+        -note: Edit NOTE column of a CAPITAL in the database.
+'''
+    
 def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('-create', type=bool,
-                        help='Erase existing database and populate new database')
+                        help='Erase existing database and populate new database if True')
     parser.add_argument('-capital', type=str,
-                        help='Returns state given the CAPITAL')
+                        help='Name of the state can be choosen from capitals.csv')
     parser.add_argument('-state', type=str,
-                        help='Returns capital given the STATE')
+                        help='Name of the capital can be choosen from capitals.csv')
     parser.add_argument('-city', type=str,
-                        help='The name of the CAPITAL in the database')
+                        help='Name of the capital can be choosen from capitals.csv')
     parser.add_argument('-note', type=str, 
-                        help='Add some travel NOTES in the database')
+                        help='The string that follows must be written inside apostrophes')
     args = parser.parse_args()
     return args
 
