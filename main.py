@@ -9,10 +9,9 @@ from directory.capitals import check_capital
 from directory.capitals import check_state
 from directory.db_manager import db_create
 
-''' This function edit the content of note of a the chosen capital.'''
-
 
 def db_edit():
+    ''' This function edit the content of note of a the chosen capital.'''
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
 
@@ -21,11 +20,10 @@ def db_edit():
     conn.commit()
     conn.close()
 
-''' This function shows the note of a given capital.
-It is useful to check if the note entry got updated or not.'''
-
 
 def db_check():
+    ''' This function shows the note of a given capital.
+    It is useful to check if the note entry got updated or not.'''
     conn = sqlite3.connect('capitals.sqlite')
     cur = conn.cursor()
 
@@ -34,17 +32,16 @@ def db_check():
     print (cur.fetchone())
     conn.close()
 
-''' Parse user inputs:
+
+def parse_arguments():
+    ''' Parse user inputs:
         -create: Erase existing database and populate new database if
         it is followed by True.
         -capital: Return capital given the STATE.
         -state: Return state given the CAPITAL.
         -city: Select the CAPITAL in the database.
         -note: Edit NOTE column of a CAPITAL in the database.
-'''
-
-
-def parse_arguments():
+    '''
     parser = argparse.ArgumentParser()
     parser.add_argument('-create', type=bool,
                         help='Erase database and populate new if True')
