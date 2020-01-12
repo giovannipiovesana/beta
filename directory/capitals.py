@@ -1,3 +1,6 @@
+'''This module imports the dictionary from data folder in order to get all
+the capital/states needed for the following functions.
+'''
 from data.dictionary import list_of_capitals
 
 
