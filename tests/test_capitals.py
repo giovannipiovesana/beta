@@ -9,30 +9,31 @@ import sys
 
 class TestTrue(unittest.TestCase):
 
+    
     def setUp(self):
         self.list = str('Andorra')
         self.list_boundary = ('andorra', 'aland island')
         self.list_empty = ()
 
-    ''' Test 1: test with an invalid type input.'''
 
     def test_invalid(self):
+        ''' Test 1: test with an invalid type input.'''
         a = check_state(self.list)
         b = check_capital(self.list)
         self.assertFalse(a)
         self.assertFalse(b)
 
-    ''' Test 2: Test with an empty list.'''
 
     def test_empty(self):
+        ''' Test 2: Test with an empty list.'''
         c = check_state(self.list_empty)
         d = check_capital(self.list_empty)
         self.assertFalse(c)
         self.assertFalse(d)
 
-    ''' Test 3: Test with a corner case since lowercase aren't allowed.'''
 
     def test_cornercase(self):
+        ''' Test 3: Test with a corner case since lowercase aren't allowed.'''
         e = check_state(self.list_boundary)
         f = check_capital(self.list_boundary)
         self.assertFalse(e)
