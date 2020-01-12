@@ -15,17 +15,15 @@ INPUT:
 ```
 $ python main.py -state Berlin 
 ```
-<br>
 OUTPUT: 
 ```
 The European state whose capital is Berlin is Germany
 ```
-
-* INPUT: 
+INPUT: 
 ```
 $ python main.py -capital Italy
 ```
-* OUTPUT: 
+OUTPUT: 
 ```
 The capital of Italy is Rome
 ```
