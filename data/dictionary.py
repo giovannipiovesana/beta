@@ -1,3 +1,5 @@
+'''This is capitals.csv file displayed as a dictionary.
+'''
 list_of_capitals = {
     'Aland Islands': 'Mariehamn',
     'Albania': 'Tirana',
