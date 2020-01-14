@@ -26,7 +26,7 @@ OUTPUT:
 The capital of Italy is Rome
 ```
 
-## Capitals and States input rules
+## Capitals and States input orthography rules
 All the 'Capital' and 'State' commands must be written with the first letter in uppercase and the rest lowercase, otherwise the code returns an error like this:
 <br>
 OUTPUT: 
