@@ -1,8 +1,8 @@
-# My Europe's travel diary
+# My Europe's travel notebook
 
 ## Project overview
 
-This project is a diary that travelers can use to note their journey in the european capitals.
+This project is a notebook that travelers can use to note throughout their journey in the european capitals.
 
 ## Europe's Capitals and States feature
 The european continent has a lot of states, many of which is difficult to remember exactly the capital. For this reason the ```main.py``` module comes in handy. It has a command which helps the user remember the capital given the state or viceversa. 
